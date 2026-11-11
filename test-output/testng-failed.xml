@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="factorial.NegativeValidations">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="negativeFactCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.NegativeValidations -->
+      <class name="factorial.TermsAndPrivacy_LinkCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="termsLinkCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="privacyLinkCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.TermsAndPrivacy_LinkCheck -->
+      <class name="factorial.BoundaryValueAnalysis">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="boundaryFactCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.BoundaryValueAnalysis -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="factorial.NegativeValidations">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="negativeFactCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.NegativeValidations -->
+      <class name="factorial.TermsAndPrivacy_LinkCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="termsLinkCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="privacyLinkCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.TermsAndPrivacy_LinkCheck -->
+      <class name="factorial.BoundaryValueAnalysis">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="boundaryFactCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.BoundaryValueAnalysis -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

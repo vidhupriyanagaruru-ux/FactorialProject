@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="10" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-10T20:37:59 IST" name="Suite" finished-at="2026-11-10T20:39:08 IST" duration-ms="69142">
+    <groups>
+    </groups>
+    <test started-at="2026-11-10T20:37:59 IST" name="chromeTest" finished-at="2026-11-10T20:38:36 IST" duration-ms="37173">
+      <class name="factorial.AboutPage_LinkCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.AboutPage_LinkCheck@5aebe890]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:05 IST" duration-ms="6026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="aboutLinkCheck()[pri:0, instance:factorial.AboutPage_LinkCheck@5aebe890]" started-at="2026-11-10T20:38:05 IST" name="aboutLinkCheck" description="Verification of link count in about page and print link name" finished-at="2026-11-10T20:38:08 IST" duration-ms="3767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.AboutPage_LinkCheck@5aebe890]" started-at="2026-11-10T20:38:08 IST" name="tearDown" finished-at="2026-11-10T20:38:08 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=aboutLinkCheck status=SUCCESS method=AboutPage_LinkCheck.aboutLinkCheck()[pri:0, instance:factorial.AboutPage_LinkCheck@5aebe890] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.AboutPage_LinkCheck@5aebe890]" started-at="2026-11-10T20:38:08 IST" name="closeBrowser" finished-at="2026-11-10T20:38:10 IST" duration-ms="1594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.AboutPage_LinkCheck -->
+      <class name="factorial.NegativeValidations">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.NegativeValidations@8c3b9d]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:04 IST" duration-ms="5121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="negativeFactCheck()[pri:0, instance:factorial.NegativeValidations@8c3b9d]" started-at="2026-11-10T20:38:04 IST" name="negativeFactCheck" description="Factorial check for negative values-error message and application crash validations" finished-at="2026-11-10T20:38:33 IST" duration-ms="29614" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+No error message displayed or incorrect error message expected [Please enter an integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+No error message displayed or incorrect error message expected [Please enter an integer] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at factorial.NegativeValidations.negativeFactCheck(NegativeValidations.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeFactCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.NegativeValidations@8c3b9d]" started-at="2026-11-10T20:38:33 IST" name="tearDown" finished-at="2026-11-10T20:38:33 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeFactCheck status=FAILURE method=NegativeValidations.negativeFactCheck()[pri:0, instance:factorial.NegativeValidations@8c3b9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.NegativeValidations@8c3b9d]" started-at="2026-11-10T20:38:33 IST" name="closeBrowser" finished-at="2026-11-10T20:38:36 IST" duration-ms="2250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.NegativeValidations -->
+      <class name="factorial.ValidationsPartTwo">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.ValidationsPartTwo@394df057]" started-at="2026-11-10T20:38:21 IST" name="launchApplication" finished-at="2026-11-10T20:38:25 IST" duration-ms="4731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testValues()[pri:0, instance:factorial.ValidationsPartTwo@394df057]" started-at="2026-11-10T20:38:25 IST" name="testValues" description="Validation of placeholder, title and url values" finished-at="2026-11-10T20:38:26 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.ValidationsPartTwo@394df057]" started-at="2026-11-10T20:38:26 IST" name="tearDown" finished-at="2026-11-10T20:38:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValues status=SUCCESS method=ValidationsPartTwo.testValues()[pri:0, instance:factorial.ValidationsPartTwo@394df057] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.ValidationsPartTwo@394df057]" started-at="2026-11-10T20:38:26 IST" name="closeBrowser" finished-at="2026-11-10T20:38:26 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.ValidationsPartTwo -->
+      <class name="factorial.BoundaryValueAnalysis">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.BoundaryValueAnalysis@4c39bec8]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:05 IST" duration-ms="6120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="boundaryFactCheck()[pri:0, instance:factorial.BoundaryValueAnalysis@4c39bec8]" started-at="2026-11-10T20:38:05 IST" name="boundaryFactCheck" description="Factorial check for boundary values" finished-at="2026-11-10T20:38:16 IST" duration-ms="11738" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect factorial value expected [The factorial of 990 is: 0] but found [The factorial of 990 is: Infinity]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect factorial value expected [The factorial of 990 is: 0] but found [The factorial of 990 is: Infinity]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at factorial.BoundaryValueAnalysis.boundaryFactCheck(BoundaryValueAnalysis.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- boundaryFactCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.BoundaryValueAnalysis@4c39bec8]" started-at="2026-11-10T20:38:16 IST" name="tearDown" finished-at="2026-11-10T20:38:17 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=boundaryFactCheck status=FAILURE method=BoundaryValueAnalysis.boundaryFactCheck()[pri:0, instance:factorial.BoundaryValueAnalysis@4c39bec8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.BoundaryValueAnalysis@4c39bec8]" started-at="2026-11-10T20:38:17 IST" name="closeBrowser" finished-at="2026-11-10T20:38:21 IST" duration-ms="4125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.BoundaryValueAnalysis -->
+      <class name="factorial.FactorialCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.FactorialCheck@4961f6af]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:03 IST" duration-ms="4905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="factCheck()[pri:0, instance:factorial.FactorialCheck@4961f6af]" started-at="2026-11-10T20:38:03 IST" name="factCheck" description="Factorial check for positive values" finished-at="2026-11-10T20:38:24 IST" duration-ms="20490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- factCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.FactorialCheck@4961f6af]" started-at="2026-11-10T20:38:24 IST" name="tearDown" finished-at="2026-11-10T20:38:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=factCheck status=SUCCESS method=FactorialCheck.factCheck()[pri:0, instance:factorial.FactorialCheck@4961f6af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.FactorialCheck@4961f6af]" started-at="2026-11-10T20:38:24 IST" name="closeBrowser" finished-at="2026-11-10T20:38:25 IST" duration-ms="977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.FactorialCheck -->
+      <class name="factorial.Validation_UIElements">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:18 IST" name="launchApplication" finished-at="2026-11-10T20:38:23 IST" duration-ms="5747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testPresence()[pri:0, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:23 IST" name="testPresence" description="Validation of Presence of Elements" finished-at="2026-11-10T20:38:24 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPresence -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:24 IST" name="tearDown" finished-at="2026-11-10T20:38:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPresence status=SUCCESS method=Validation_UIElements.testPresence()[pri:0, instance:factorial.Validation_UIElements@158a8276] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testClickable()[pri:1, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:24 IST" name="testClickable" description="Validation of Clickability of Elements " finished-at="2026-11-10T20:38:24 IST" depends-on-methods="factorial.Validation_UIElements.testPresence" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickable -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:24 IST" name="tearDown" finished-at="2026-11-10T20:38:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClickable status=SUCCESS method=Validation_UIElements.testClickable()[pri:1, instance:factorial.Validation_UIElements@158a8276] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.Validation_UIElements@158a8276]" started-at="2026-11-10T20:38:24 IST" name="closeBrowser" finished-at="2026-11-10T20:38:25 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.Validation_UIElements -->
+      <class name="factorial.TermsAndPrivacy_LinkCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:10 IST" name="launchApplication" finished-at="2026-11-10T20:38:14 IST" duration-ms="3926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="termsLinkCheck()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:14 IST" name="termsLinkCheck" description="Verification of terms link" finished-at="2026-11-10T20:38:15 IST" duration-ms="691" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect url mapped expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect url mapped expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at factorial.TermsAndPrivacy_LinkCheck.termsLinkCheck(TermsAndPrivacy_LinkCheck.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termsLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:15 IST" name="tearDown" finished-at="2026-11-10T20:38:15 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=termsLinkCheck status=FAILURE method=TermsAndPrivacy_LinkCheck.termsLinkCheck()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="privacyLinkCheck()[pri:1, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:15 IST" name="privacyLinkCheck" description="Verification of privacy link" finished-at="2026-11-10T20:38:15 IST" duration-ms="564" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect url mapped expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect url mapped expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at factorial.TermsAndPrivacy_LinkCheck.privacyLinkCheck(TermsAndPrivacy_LinkCheck.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:15 IST" name="tearDown" finished-at="2026-11-10T20:38:15 IST" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=privacyLinkCheck status=FAILURE method=TermsAndPrivacy_LinkCheck.privacyLinkCheck()[pri:1, instance:factorial.TermsAndPrivacy_LinkCheck@f79e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@f79e]" started-at="2026-11-10T20:38:15 IST" name="closeBrowser" finished-at="2026-11-10T20:38:18 IST" duration-ms="2143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.TermsAndPrivacy_LinkCheck -->
+    </test> <!-- chromeTest -->
+    <test started-at="2026-11-10T20:37:59 IST" name="firefoxTest" finished-at="2026-11-10T20:39:08 IST" duration-ms="69142">
+      <class name="factorial.AboutPage_LinkCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.AboutPage_LinkCheck@32910148]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:19 IST" duration-ms="20314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="aboutLinkCheck()[pri:0, instance:factorial.AboutPage_LinkCheck@32910148]" started-at="2026-11-10T20:38:19 IST" name="aboutLinkCheck" description="Verification of link count in about page and print link name" finished-at="2026-11-10T20:38:23 IST" duration-ms="4054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.AboutPage_LinkCheck@32910148]" started-at="2026-11-10T20:38:23 IST" name="tearDown" finished-at="2026-11-10T20:38:23 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=aboutLinkCheck status=SUCCESS method=AboutPage_LinkCheck.aboutLinkCheck()[pri:0, instance:factorial.AboutPage_LinkCheck@32910148] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.AboutPage_LinkCheck@32910148]" started-at="2026-11-10T20:38:23 IST" name="closeBrowser" finished-at="2026-11-10T20:38:25 IST" duration-ms="1864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.AboutPage_LinkCheck -->
+      <class name="factorial.NegativeValidations">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.NegativeValidations@3f56875e]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:19 IST" duration-ms="20618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="negativeFactCheck()[pri:0, instance:factorial.NegativeValidations@3f56875e]" started-at="2026-11-10T20:38:19 IST" name="negativeFactCheck" description="Factorial check for negative values-error message and application crash validations" finished-at="2026-11-10T20:38:50 IST" duration-ms="30639" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+No error message displayed or incorrect error message expected [Please enter an integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+No error message displayed or incorrect error message expected [Please enter an integer] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at factorial.NegativeValidations.negativeFactCheck(NegativeValidations.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeFactCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.NegativeValidations@3f56875e]" started-at="2026-11-10T20:38:50 IST" name="tearDown" finished-at="2026-11-10T20:38:50 IST" duration-ms="39" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=negativeFactCheck status=FAILURE method=NegativeValidations.negativeFactCheck()[pri:0, instance:factorial.NegativeValidations@3f56875e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.NegativeValidations@3f56875e]" started-at="2026-11-10T20:38:50 IST" name="closeBrowser" finished-at="2026-11-10T20:38:51 IST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.NegativeValidations -->
+      <class name="factorial.ValidationsPartTwo">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.ValidationsPartTwo@fa36558]" started-at="2026-11-10T20:38:36 IST" name="launchApplication" finished-at="2026-11-10T20:38:44 IST" duration-ms="7873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testValues()[pri:0, instance:factorial.ValidationsPartTwo@fa36558]" started-at="2026-11-10T20:38:44 IST" name="testValues" description="Validation of placeholder, title and url values" finished-at="2026-11-10T20:38:44 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValues -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.ValidationsPartTwo@fa36558]" started-at="2026-11-10T20:38:44 IST" name="tearDown" finished-at="2026-11-10T20:38:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValues status=SUCCESS method=ValidationsPartTwo.testValues()[pri:0, instance:factorial.ValidationsPartTwo@fa36558] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.ValidationsPartTwo@fa36558]" started-at="2026-11-10T20:38:44 IST" name="closeBrowser" finished-at="2026-11-10T20:38:45 IST" duration-ms="1328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.ValidationsPartTwo -->
+      <class name="factorial.BoundaryValueAnalysis">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.BoundaryValueAnalysis@2b4bac49]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:14 IST" duration-ms="15376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="boundaryFactCheck()[pri:0, instance:factorial.BoundaryValueAnalysis@2b4bac49]" started-at="2026-11-10T20:38:14 IST" name="boundaryFactCheck" description="Factorial check for boundary values" finished-at="2026-11-10T20:38:26 IST" duration-ms="12273" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect factorial value expected [The factorial of 990 is: 0] but found [The factorial of 990 is: Infinity]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect factorial value expected [The factorial of 990 is: 0] but found [The factorial of 990 is: Infinity]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at factorial.BoundaryValueAnalysis.boundaryFactCheck(BoundaryValueAnalysis.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- boundaryFactCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.BoundaryValueAnalysis@2b4bac49]" started-at="2026-11-10T20:38:26 IST" name="tearDown" finished-at="2026-11-10T20:38:26 IST" duration-ms="78" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=boundaryFactCheck status=FAILURE method=BoundaryValueAnalysis.boundaryFactCheck()[pri:0, instance:factorial.BoundaryValueAnalysis@2b4bac49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.BoundaryValueAnalysis@2b4bac49]" started-at="2026-11-10T20:38:26 IST" name="closeBrowser" finished-at="2026-11-10T20:38:27 IST" duration-ms="1156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.BoundaryValueAnalysis -->
+      <class name="factorial.FactorialCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.FactorialCheck@672872e1]" started-at="2026-11-10T20:37:59 IST" name="launchApplication" finished-at="2026-11-10T20:38:13 IST" duration-ms="14869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="factCheck()[pri:0, instance:factorial.FactorialCheck@672872e1]" started-at="2026-11-10T20:38:13 IST" name="factCheck" description="Factorial check for positive values" finished-at="2026-11-10T20:39:07 IST" duration-ms="53702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- factCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.FactorialCheck@672872e1]" started-at="2026-11-10T20:39:07 IST" name="tearDown" finished-at="2026-11-10T20:39:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=factCheck status=SUCCESS method=FactorialCheck.factCheck()[pri:0, instance:factorial.FactorialCheck@672872e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.FactorialCheck@672872e1]" started-at="2026-11-10T20:39:07 IST" name="closeBrowser" finished-at="2026-11-10T20:39:08 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.FactorialCheck -->
+      <class name="factorial.Validation_UIElements">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:37:58 IST" name="setupReport" finished-at="2026-11-10T20:37:59 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:27 IST" name="launchApplication" finished-at="2026-11-10T20:38:35 IST" duration-ms="8031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testPresence()[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:35 IST" name="testPresence" description="Validation of Presence of Elements" finished-at="2026-11-10T20:38:36 IST" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPresence -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:36 IST" name="tearDown" finished-at="2026-11-10T20:38:36 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPresence status=SUCCESS method=Validation_UIElements.testPresence()[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testClickable()[pri:1, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:37 IST" name="testClickable" description="Validation of Clickability of Elements " finished-at="2026-11-10T20:38:38 IST" depends-on-methods="factorial.Validation_UIElements.testPresence" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickable -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:38 IST" name="closeBrowser" finished-at="2026-11-10T20:38:39 IST" duration-ms="1570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:38:38 IST" name="tearDown" finished-at="2026-11-10T20:38:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClickable status=SUCCESS method=Validation_UIElements.testClickable()[pri:1, instance:factorial.Validation_UIElements@7c1e2a9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:factorial.Validation_UIElements@7c1e2a9e]" started-at="2026-11-10T20:39:08 IST" name="flushReport" finished-at="2026-11-10T20:39:08 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- factorial.Validation_UIElements -->
+      <class name="factorial.TermsAndPrivacy_LinkCheck">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:25 IST" name="launchApplication" finished-at="2026-11-10T20:38:33 IST" duration-ms="7746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="termsLinkCheck()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:33 IST" name="termsLinkCheck" description="Verification of terms link" finished-at="2026-11-10T20:38:33 IST" duration-ms="857" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect url mapped expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect url mapped expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at factorial.TermsAndPrivacy_LinkCheck.termsLinkCheck(TermsAndPrivacy_LinkCheck.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termsLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:33 IST" name="tearDown" finished-at="2026-11-10T20:38:34 IST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=termsLinkCheck status=FAILURE method=TermsAndPrivacy_LinkCheck.termsLinkCheck()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="privacyLinkCheck()[pri:1, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:34 IST" name="privacyLinkCheck" description="Verification of privacy link" finished-at="2026-11-10T20:38:35 IST" duration-ms="1625" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Incorrect url mapped expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Incorrect url mapped expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at factorial.TermsAndPrivacy_LinkCheck.privacyLinkCheck(TermsAndPrivacy_LinkCheck.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyLinkCheck -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:35 IST" name="tearDown" finished-at="2026-11-10T20:38:35 IST" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=privacyLinkCheck status=FAILURE method=TermsAndPrivacy_LinkCheck.privacyLinkCheck()[pri:1, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:factorial.TermsAndPrivacy_LinkCheck@fd07cbb]" started-at="2026-11-10T20:38:35 IST" name="closeBrowser" finished-at="2026-11-10T20:38:37 IST" duration-ms="2017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- factorial.TermsAndPrivacy_LinkCheck -->
+    </test> <!-- firefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

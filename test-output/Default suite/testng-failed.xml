@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="factorial.AboutPage_LinkCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="aboutLinkCheck"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.AboutPage_LinkCheck -->
+      <class name="factorial.ValidationsPartTwo">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="testValues"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.ValidationsPartTwo -->
+      <class name="factorial.NegativeValidations">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="negativeFactCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.NegativeValidations -->
+      <class name="factorial.FactorialCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="factCheck"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.FactorialCheck -->
+      <class name="factorial.Validation_UIElements">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testClickable"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="testPresence"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.Validation_UIElements -->
+      <class name="factorial.BoundaryValueAnalysis">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="boundaryFactCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.BoundaryValueAnalysis -->
+      <class name="factorial.TermsAndPrivacy_LinkCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="termsLinkCheck"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="setupReport"/>
+          <include name="privacyLinkCheck"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- factorial.TermsAndPrivacy_LinkCheck -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
